@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryar Aziz | Frontend Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-blue-600 tracking-tighter">SA.</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Skills</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Experience</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 md:pt-40 md:pb-24 flex items-center min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2 text-center md:text-left reveal-left">
+                    <p class="text-blue-600 font-semibold mb-2 tracking-wide uppercase">Hello, I'm</p>
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+                        Sheryar <span class="text-blue-600">Aziz</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-600 font-medium mb-6">
+                        Frontend Developer
+                    </h2>
+                    <p class="text-gray-600 mb-8 max-w-lg mx-auto md:mx-0 text-lg">
+                        Building the web, one line of code at a time. Specializing in creating clean, responsive, and high-performance user interfaces.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#contact" class="px-8 py-3 bg-blue-600 text-white font-medium rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                            Get In Touch
+                        </a>
+                        <a href="#projects" class="px-8 py-3 bg-white text-blue-600 font-medium rounded-full shadow-md hover:bg-gray-50 hover:shadow-lg border border-gray-200 transition-all duration-300">
+                            View Work
+                        </a>
+                    </div>
+                    <div class="mt-8 flex justify-center md:justify-start gap-6 text-gray-500">
+                        <a href="https://www.linkedin.com/in/sheryar-aziz-796b61283" target="_blank" class="hover:text-blue-600 text-2xl transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:sheryarazizit@gmail.com" class="hover:text-blue-600 text-2xl transition-colors"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="hover:text-blue-600 text-2xl transition-colors"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center reveal-right">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-blue-600 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+                        <img src="https://ui-avatars.com/api/?name=Sheryar+Aziz&background=2563eb&color=fff&size=512" alt="Sheryar Aziz" class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-up">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            <div class="max-w-3xl mx-auto text-lg text-gray-600 leading-relaxed text-center md:text-left">
+                <p class="mb-6">
+                    I am a dedicated <strong>Frontend Developer and Software Engineering student</strong> with a strong academic background and a passion for building high-performance digital solutions. Based in Gilgit-Baltistan, Pakistan, I specialize in modern web technologies.
+                </p>
+                <p class="mb-6">
+                    My expertise spans <strong>HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS</strong>. I excel at creating seamless user interfaces and translating complex visions into functional, visually appealing websites. In my freelance work, I've successfully managed and delivered multiple client projects, focusing on responsive design and user engagement.
+                </p>
+                <p>
+                    I am committed to clean, scalable code and continuous learning. Let's build something amazing together!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-up">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">My Skills</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fab fa-html5 text-5xl text-orange-500"></i>
+                    <span class="font-semibold text-gray-800">HTML5</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500"></i>
+                    <span class="font-semibold text-gray-800">CSS3</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fab fa-js text-5xl text-yellow-400"></i>
+                    <span class="font-semibold text-gray-800">JavaScript</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <svg class="w-12 h-12 text-teal-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg>
+                    <span class="font-semibold text-gray-800">Tailwind CSS</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fab fa-bootstrap text-5xl text-purple-600"></i>
+                    <span class="font-semibold text-gray-800">Bootstrap</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fab fa-git-alt text-5xl text-red-500"></i>
+                    <span class="font-semibold text-gray-800">Git / GitHub</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fas fa-mobile-alt text-5xl text-gray-600"></i>
+                    <span class="font-semibold text-gray-800">Responsive Design</span>
+                </div>
+                <!-- Skill Card -->
+                <div class="skill-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col items-center justify-center gap-4">
+                    <i class="fas fa-layer-group text-5xl text-indigo-500"></i>
+                    <span class="font-semibold text-gray-800">UI/UX Principles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-up">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience & Education</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Experience -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <i class="fas fa-briefcase text-blue-600"></i> Experience
+                    </h3>
+                    <div class="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+                        
+                        <!-- Timeline Item -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active pl-8 md:pl-0">
+                            <!-- Icon -->
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-blue-600 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 -translate-x-1/2 top-1"></div>
+                            <!-- Card -->
+                            <div class="w-[calc(100%-2rem)] md:w-[calc(50%-2rem)] p-4 rounded-xl shadow bg-gray-50 border border-gray-100 group-hover:-translate-y-1 transition-transform">
+                                <div class="flex items-center justify-between mb-1">
+                                    <h4 class="font-bold text-lg text-gray-900">Frontend Developer</h4>
+                                    <span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-full">Jan 2023 - Present</span>
+                                </div>
+                                <div class="text-gray-600 font-medium text-sm mb-2">Freelance | Self-Employed</div>
+                                <p class="text-gray-600 text-sm">Successfully managing and delivering multiple client projects, focusing on responsive design, modern UI/UX, and user engagement.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Education & Certifications -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-blue-600"></i> Education & Certifications
+                    </h3>
+                    <div class="space-y-8 relative before:absolute before:inset-0 before:ml-2 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-300 before:to-transparent">
+                        
+                        <!-- Timeline Item -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active pl-8 md:pl-0">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-blue-600 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 -translate-x-1/2 top-1"></div>
+                            <div class="w-[calc(100%-2rem)] md:w-[calc(50%-2rem)] p-4 rounded-xl shadow bg-gray-50 border border-gray-100 group-hover:-translate-y-1 transition-transform">
+                                <div class="flex flex-col gap-1 mb-1">
+                                    <h4 class="font-bold text-lg text-gray-900">Google AI Certifications</h4>
+                                    <span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-full w-fit">2026</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">- Discover the Art of Prompting<br>- Maximize Productivity With AI Tools<br>- Introduction to AI (Coursera)</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item -->
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group pl-8 md:pl-0 mt-8">
+                            <div class="flex items-center justify-center w-5 h-5 rounded-full border-4 border-white bg-gray-400 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow absolute left-0 md:left-1/2 -translate-x-1/2 top-1"></div>
+                            <div class="w-[calc(100%-2rem)] md:w-[calc(50%-2rem)] p-4 rounded-xl shadow bg-gray-50 border border-gray-100 group-hover:-translate-y-1 transition-transform">
+                                <div class="flex flex-col gap-1 mb-1">
+                                    <h4 class="font-bold text-lg text-gray-900">ICS (12th Grade)</h4>
+                                    <span class="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded-full w-fit">2021 - 2022</span>
+                                </div>
+                                <div class="text-gray-600 font-medium text-sm mb-2">Army Public School Juital Gilgit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-up">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <!-- Placeholder Image -->
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+                            <i class="fas fa-laptop-code text-5xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-blue-600/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 transition-colors" title="Live Preview">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 transition-colors" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-900 mb-2">E-Commerce UI</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">A fully responsive and modern e-commerce storefront layout built with Tailwind CSS and vanilla JavaScript.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">HTML/CSS</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Tailwind</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+                            <i class="fas fa-chart-pie text-5xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-blue-600/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-900 mb-2">Admin Dashboard</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">A sleek admin dashboard template utilizing Bootstrap for layout and chart integration for data visualization.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">Bootstrap</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="relative h-48 overflow-hidden bg-gray-200">
+                        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+                            <i class="fas fa-mobile-alt text-5xl group-hover:scale-110 transition-transform duration-300"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-blue-600/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-blue-600 hover:bg-gray-100 transition-colors">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl text-gray-900 mb-2">Portfolio Template</h3>
+                        <p class="text-gray-600 mb-4 text-sm line-clamp-2">A customizable portfolio template for developers and designers with scroll animations and dark mode toggle.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">HTML</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-600 rounded">CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-up">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">I'm currently looking for new frontend developer opportunities (Freelance, Full-time, or Internship). Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">Email</h4>
+                            <a href="mailto:sheryarazizit@gmail.com" class="text-gray-600 hover:text-blue-600 transition-colors">sheryarazizit@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <i class="fas fa-map-marker-alt text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">Location</h4>
+                            <p class="text-gray-600">Gilgit-Baltistan, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 shrink-0">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/sheryar-aziz-796b61283" target="_blank" class="text-gray-600 hover:text-blue-600 transition-colors">Sheryar Aziz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Static) -->
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thanks for reaching out! Since this is a static site, please email me directly at sheryarazizit@gmail.com');">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-md hover:shadow-lg">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter mb-4 md:mb-0">
+                SA.
+            </div>
+            <p class="text-gray-400 text-sm text-center md:text-left mb-4 md:mb-0">
+                © 2026 Sheryar Aziz. All rights reserved.
+            </p>
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/in/sheryar-aziz-796b61283" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">GitHub</span>
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
